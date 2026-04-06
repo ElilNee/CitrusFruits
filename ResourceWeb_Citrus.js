@@ -1,3 +1,5 @@
+let currentFruit = "";
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -24,82 +26,21 @@ var appearenceTab = document.getElementById("Appearence");
 var tasteTab = document.getElementById("Taste");
 var nutritionalinfoTab = document.getElementById("NutritionalInfo");
 var healthbenefitsTab = document.getElementById("HealthBenefits");
-pomImg.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-manImg.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-citImg.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-papImg.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-kumImg.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-graImg.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-meyImg.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-sweImg.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-budImg.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-tanImg.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-bitImg.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-lemImg.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-keyImg.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-limqImg.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-limeImg.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
 
+const images = document.querySelectorAll(".Evolution img");
+
+images.forEach(img => {
+  img.onclick = function () {
+    const fruitId = this.id;
+
+    modal.style.display = "flex";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+
+    currentFruit = fruitId;
+    showFruitContent(fruitId);
+  };
+});
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -109,23 +50,63 @@ span.onclick = function() {
 modal.style.display = "none";
 }
 
-tab.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
+function updateTabs(fruitId) {
+  const data = fruitData[fruitId];
+  if (!data) return;
+
+  document.getElementById("Appearence").innerHTML =
+    "<p>" + data.appearance + "</p>";
+
+  document.getElementById("Taste").innerHTML =
+    "<p>" + data.taste + "</p>";
+
+  document.getElementById("NutritionalInfo").innerHTML =
+    "<p>" + data.nutrition + "</p>";
+
+  document.getElementById("HealthBenefits").innerHTML =
+    "<p>" + data.health + "</p>";
+
+  // Show first tab first
+  document.getElementById("Appearence").style.display = "block";
+
+  // reset active tab
+  const tablinks = document.getElementsByClassName("tablinks");
+  for (let i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("active");
+  }
+  tablinks[0].classList.add("active");
+}
+
+function showFruitContent(fruitId) {
+  // hide all fruit sections
+  const allFruits = document.getElementsByClassName("fruit-content");
+  for (let i = 0; i < allFruits.length; i++) {
+    allFruits[i].style.display = "none";
+  }
+
+  // show selected fruit
+  document.getElementById(fruitId + "-content").style.display = "block";
+
+  // show first tab (Appearance)
+  openTab(null, fruitId + "-Appearence");
 }
 
 function openTab(evt, tabName) {
-
-  // Get all tab content
   var tabcontent = document.getElementsByClassName("tabcontent");
+  var tablinks = document.getElementsByClassName("tablinks");
 
-  // Hide all tab content
   for (var i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
 
-  // Show the clicked tab
+  for (var i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("active");
+  }
+
   document.getElementById(tabName).style.display = "block";
 
+  if (evt) {
+    evt.currentTarget.classList.add("active");
+  }
 }
+

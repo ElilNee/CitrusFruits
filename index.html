@@ -12,7 +12,7 @@
     <a id="top"></a>
    <div class="header">
     <nav>
-        <h1>Citrus</h1> 
+        <h1>CITRUS</h1> 
         <nav> <a href="index.html">Evolution</a></nav>
         <nav> <a href="ResourceWebRecipes_CF.html">Recipes</a></nav>
         <nav> <a href="ResourceWebAbout_CF.html">About</a></nav>
@@ -21,9 +21,9 @@
    </div>
     
    <div class="banner">
-        <H2>Citrus Fruit</H2>
-        <H3>Explore the wonders of citrus fruit through evolution</H2>
-        <p>Click to learn more</p>
+        <H2>Citrus Fruit Evolution</H2>
+        <H3>Explore the Wonders of Citrus Fruit Through Evolution</H3>
+        <p>Click on Each Fruit to Learn More</p>
    </div>
 
 <section class="Evolution">
@@ -38,12 +38,12 @@
 </div>
 
 <div class="mandarin">
-    <img id="mandarin" src="Citrus images/mandarin2.png" alt="Manadran"style="width: 15.5%;height 15.5%;">
+    <img id="mandarin" src="Citrus images/mandarin2.png" alt="Mandarin"style="width: 15.5%;height 15.5%;">
     <h2>Mandarin</h2>
 </div>
 
 <div class="citron">
-    <img id="citron" src="Citrus images/Citron2.png" alt="Citron"style="width: 21%;height 21%;">
+    <img id="citron" src="Citrus images/Citron2.png" alt="Citron"style="width: 19%;height 20%;">
     <h2>Citron</h2>
  </div>
 
@@ -53,7 +53,7 @@
 </div>
 
 <div class="kumquat">
-    <img id="kumquat" src="Citrus images/kumquat2.png" alt="Kumquat"style="width: 21.5%;height 21.5%;">
+    <img id="kumquat" src="Citrus images/kumquat2.png" alt="Kumquat"style="width: 17%;height 17%;">
     <h2>Kumquat</h2>
 </div>
 
@@ -63,17 +63,17 @@
 </div>
 
 <div class="meyerlemon">
-    <img id="meyerlemon" src="Citrus images/meyerlemon5.png" alt="MeyerLemon"style="width: 21%;height 21.5%;">
+    <img id="meyerlemon" src="Citrus images/meyerlemon5.png" alt="Meyer Lemon"style="width: 21%;height 21.5%;">
     <h2>Meyer<br>Lemon</h2>
 </div>
 
 <div class="sweetorange">
-    <img id="sweetorange" src="Citrus images/sweetorange3.png" alt="SweetOrange"style="width: 15%;height 15%;">
+    <img id="sweetorange" src="Citrus images/sweetorange3.png" alt="Sweet Orange"style="width: 15%;height 15%;">
     <h2>Sweet<br>Orange</h2>
 </div>
 
 <div class="buddhashand">
-    <img id="buddhashand" src="Citrus images/buddhashand4.png" alt="Buddhashand"style="width: 29%;height 30%;">
+    <img id="buddhashand" src="Citrus images/buddhashand4.png" alt="Buddha's Hand"style="width: 20%;height 20%;">
     <h2>Buddha's<br>Hand</h2>
 </div>
 
@@ -83,7 +83,7 @@
 </div>
 
 <div class="bitterorange">
-    <img id="bitterorange" src="Citrus images/bitterorange3.png" alt="BitterOrange"style="width: 17%;height 19%;">
+    <img id="bitterorange" src="Citrus images/bitterorange3.png" alt="Bitter Orange"style="width: 17%;height 19%;">
     <h2>Bitter<br>Orange</h2>
 </div>
 
@@ -93,7 +93,7 @@
 </div>
 
 <div class="keylime">
-    <img id="keylime" src="Citrus images/keylime3.png" alt="Keylime"style="width: 18%;height 18%;">
+    <img id="keylime" src="Citrus images/keylime3.png" alt="Key lime"style="width: 18%;height 18%;">
     <h2>Key Lime</h2>
 </div>
 
@@ -106,54 +106,163 @@
     <img id="lime" src="Citrus images/lime3.png" alt="Lime"style="width: 22%;height 22%;">
     <h2>Lime</h2>
 </div>
+</section>
 
- </section>
-
- <div class="footer">
+<div class="footer">
     <a href="#top">Back to Top</a>
+    <a href="ResourceWebSources_CF.html">Sources</a>
 </div>
 
-<!-- The Modal -->
 <div id="myModal" class="modal">
 
-  <!-- The Close Button -->
-  <span class="close">&times;</span>
+  <div class="modal-screen">
 
-  <!-- Modal Content (The Image) -->
-  <img class="modal-content" id="img01">
-  
+    <span class="close">&times;</span>
 
-  <!-- Modal Caption (Image Text) -->
-  <div id="caption"></div>
-
-
-
-  <!-- tab -->
-  <div class="tab">
-                <button class="tablinks" onclick="openTab(event, 'Appearence')">Appearence</button>
-                <button class="tablinks" onclick="openTab(event, 'Taste')">Taste</button>
-                <button class="tablinks" onclick="openTab(event, 'NutritionalInfo')">Nutritional Info</button>
-                <button class="tablinks" onclick="openTab(event, 'HealthBenefits')">Health Benifits</button>
-     </div>
-
-
-  <!-- tab content -->
-    <div id="Appearence" class="tabcontent">
-   <p>AppearenceAppearenceAppearenceAppearenceAppearence</p>
+    <!-- Image -->
+    <div class="image-container">
+      <img id="img01">
     </div>
 
-    <div id="Taste" class="tabcontent">
-   <p>TasteTasteTasteTasteTasteTasteTasteTasteTasteTaste</p>
+    <!-- Title -->
+    <h1 id="caption"></h1>
+
+    <!-- Tabs -->
+    <div class="tab">
+    <button class="tablinks" onclick="openTab(event, currentFruit + '-Appearence')">Appearance</button>
+    <button class="tablinks" onclick="openTab(event, currentFruit + '-Taste')">Taste</button>
+    <button class="tablinks" onclick="openTab(event, currentFruit + '-NutritionalInfo')">Nutritional Information</button>
+    <button class="tablinks" onclick="openTab(event, currentFruit + '-HealthBenefits')">Health Benefits</button>
     </div>
 
-    <div id="NutritionalInfo" class="tabcontent">
-   <p>Nutritional InfoNutritional InfoNutritional InfoNutritional Info</p>
-    </div>
+    <!-- Content -->
+<div class="tab-body">
 
-    <div id="HealthBenefits" class="tabcontent">
-   <p>Health BenefitsHealth BenefitsHealth BenefitsHealth Benefits</p>
-    </div>
+  <!-- pomelo -->
+  <div class="fruit-content" id="pomelo-content">
+    <div id="pomelo-Appearence" class="tabcontent">Pomelos are quite husky. They have a very thick pith and peel.  The colour of the outer rind ranges from a pale green to a bright yellow. The rind has a smooth to pebbly texture. The inner flesh ranges from white to pink to yellow to red and contains a fair amount of seeds.</div>
+    <div id="pomelo-Taste" class="tabcontent">Pomelos are sweet and tart in taste. Pink and red varieties are sweeter than white varieties. They tend to be sweeter and less acidic overall in comparison to a grapefruit. Pomelos have a distinct floral aroma to their skin as well.</div>
+    <div id="pomelo-NutritionalInfo" class="tabcontent">Per 1 Peeled Pomelo (609g): <br> Calories 231 <br> Fat 0 <br> Sodium 6.1mg <br> Carbohydrates 59g <br> Fibre 6g <br> Protein 4.6g <br> Contains potassium and folic acid.</div>
+    <div id="pomelo-HealthBenefits" class="tabcontent">Pomelos are an excellent source of Vitamin C which is a powerful antioxidants. Antioxidants like Naringenin and Naringin are immune system boosters and help protect against chronic diseases. The Fibre content in Pomelos aids in digestion and promotes the growth of healthy gut bacteria. The Potassium helps regulate blood pressure as well.</div>
+  </div>
+
+  <!-- mandarin -->
+  <div class="fruit-content" id="mandarin-content">
+    <div id="mandarin-Appearence" class="tabcontent">Mandarin are on the smaller side typically measuring 4-8 cm in diameter. They have an oblate shape to them are orange in colour. Mandarin skins tend to be easy-to-peel as well.</div>
+    <div id="mandarin-Taste" class="tabcontent">Mandarins have a juicy core with very sweet flesh that can sometimes lean a little tart. They tend to have a delicate and sweet fragrance too.</div>
+    <div id="mandarin-NutritionalInfo" class="tabcontent">Per 1 Mandarin Orange (88g): <br> Calories 47 <br> Fat 0 <br> Carbohydrates 12g <br> Fibre 2g <br> Protein 1g </div>
+    <div id="mandarin-HealthBenefits" class="tabcontent">Mandarins are an excellent source of Vitamin A which helps stimulate the immune system and plays a role in preventing cancers. Mandarins contain Antioxidants like beta-carotene and beta-cryptoxanthin which help also help resist the development of some cancers. They supply the most amount of Folic acidic and Potassium following the Orange. They are also a good source of Vitamin C. The fibre content helps lower blood pressure.</div>
+  </div>
+
+    <!-- citron -->
+  <div class="fruit-content" id="citron-content">
+    <div id="citron-Appearence" class="tabcontent">Citrons are generally larger, measuring 12-15 cm in length. They have Yellow-ish skin and a thick flashy rind with a small amount of flesh/pulp. They tend to be oblong or oval in shape. </div>
+    <div id="citron-Taste" class="tabcontent">Citrons have a mild sweet pith unlike most citrus fruit. The pulp can be acidic or sweet or even nearly absent in taste, while the juice can sometimes taste sour. The thick rind emits a highly aromatic scent that can be described as crisp, floral, and fresh.</div>
+    <div id="citron-NutritionalInfo" class="tabcontent">Per 100 g: <br> Calories 29 <br> Fat 0.3g <br> Sodium 2mg <br> Carbohydrates 9.3g <br> Fibre 4g <br> Protein 1.1g</div>
+    <div id="citron-HealthBenefits" class="tabcontent">The Pectin and Fibre content in citrons helps promote gut health which in turn reduces bloating. The Vitamin C found in the fruit can help strengthen the Immune system as well.</div>
+  </div>
+
+    <!-- papeda -->
+  <div class="fruit-content" id="papeda-content">
+    <div id="papeda-Appearence" class="tabcontent">Papedas are small measuring 4-5 cm in diameter. They are generally oval or oblong in shape with a flattened appearance. They have tough skin that is deeply creased and wrinkled. The surface is also rough and pebbled. The peel ripens from dark green to yellow or orange at maturity. The rind is white and spongey. The core of the papeda is packed with large seeds.</div>
+    <div id="papeda-Taste" class="tabcontent">Papedas have sour and bitter skin. The piths are also bitter. The flesh is dry and pulpy accompanied with unpleasant tart, sour, acidic or semi-bitter flavour. But the scent of the papeda can be described as refreshing as it is reminiscent of a floral and bright lemony aroma.</div>
+    <div id="papeda-NutritionalInfo" class="tabcontent">No Information Found</div>
+    <div id="papeda-HealthBenefits" class="tabcontent">Papedas are a source of Vitamin A and Vitamin C which help strengthen the Immune System and reduce Inflammation. The calcium found in Papedas can help protect overall bone health as well.</div>
+  </div>
+
+    <!-- kumquat -->
+  <div class="fruit-content" id="kumquat-content">
+    <div id="kumquat-Appearence" class="tabcontent">Kumquats are small and oblong. They typically measure in around 3-5 cm long. They have tender skin. And can be dark orange to golden yellow in colour.</div>
+    <div id="kumquat-Taste" class="tabcontent">Kumquats have a sweetish tart flavour to them. They do have a slightly acidic taste as well. Their tender skin is also edible. Kumquats have a citrusy smell similar to an orange with a slight lemon and a hint of pine.</div>
+    <div id="kumquat-NutritionalInfo" class="tabcontent">Per 1 Kumquat (19g): <br> Calories 13 <br> Carbohydrates 3g <br> Fibre 1.24g <br> Protein 0.35g <br> Rich in Vitamin C. Contains potassium and copper.</div>
+    <div id="kumquat-HealthBenefits" class="tabcontent">Kumquats are rich in disease fighting Antioxidants found especially high in the peel. The Vitamin C found in the fruit boosts the immune system and the impressive Fibre content supports overall digestive health. The high fibre count in comparison to the low amount of calories aids in weight loss as well.</div>
+  </div>
+
+    <!-- grapefruit -->
+  <div class="fruit-content" id="grapefruit-content">
+    <div id="grapefruit-Appearence" class="tabcontent">Grapefruits are medium to large in size, ranging from 10-15 cm in diameter.  They have a thick layer of pith and a smooth and glossy peel with a lightly pebbled texture from the oil glands. The peel generally ripens from a pale yellow or gold yellow to a yellow-orange colour with a pink tinge. The colour of the flesh inside ranges from red to pink to white.</div>
+    <div id="grapefruit-Taste" class="tabcontent">Grapefruits have a mildly bitter but also sweet, tart or acidic taste. They have a subtle floral scent to them as well.</div>
+    <div id="grapefruit-NutritionalInfo" class="tabcontent">Per 1/2 Grapefruit (approx. 123g): <br> Calories 52 <br> Fat 0.2g <br> Sodium 0mg <br> Carbohydrates 13.2g <br> Fibre 2g <br> Protein 0.9g <br> Source of Vitamin A, Folic Acid and Potassium.</div>
+    <div id="grapefruit-HealthBenefits" class="tabcontent">Kumquats have Vitamin A in the precursor form of Beta-Carotene which promotes normal vision. The Fibre Content helps reduce inflammation and ease blood pressure which is good for heart health. The Fibre also encourages beneficial bacteria growth in the gut. Kumquats unsurprisingly also contain Vitamin C and Antioxidants which boost the immune system.</div>
+  </div>
+
+    <!-- meyer lemon -->
+  <div class="fruit-content" id="meyerlemon-content">
+    <div id="meyerlemon-Appearence" class="tabcontent">Meyer Lemons are about the same size as lemons, although they can sometimes be smaller as well. They typically have a round to oval shape. Meyer Lemons have a thin and smooth glossy peel and are a deep yellow colour.</div>
+    <div id="meyerlemon-Taste" class="tabcontent">Meyer Lemons are sweeter than a lemon and have a zesty taste, but not as acidic. They have bitter piths. Meyer Lemons are highly fragrant with a citrusy, spiced aroma when ripe.</div>
+    <div id="meyerlemon-NutritionalInfo" class="tabcontent">Per 1 Meyer Lemon (58g): <br> Calories 25 <br> Fat 0g <br> Sodium 0mg <br> Carbohydrates 4g <br> Fibre 1g <br> Protein 1g </div>
+    <div id="meyerlemon-HealthBenefits" class="tabcontent">Meyer Lemons are a good source of Vitamin C and Antioxidants which help boost the immune system, reduce inflammation, and also stimulate collagen production in skin. The Potassium found in the fruit helps regulate fluid levels in the body and the calcium helps strengthen bones and teeth. Meyer Lemons also have a certain amount of Magnesium which maintains healthy blood pressures.</div>
+  </div>
+
+    <!-- sweet orange -->
+  <div class="fruit-content" id="sweetorange-content">
+    <div id="sweetorane-Appearence" class="tabcontent">Sweet oranges are typically 5-13 cm in diameter depending on the variety. They are round to slightly oval in shape and have rinds that are smooth to pebbled in texture. Sweet Oranges can be vibrant yellow-orange to deep orange in colour.</div>
+    <div id="sweetorange-Taste" class="tabcontent">Sweet Oranges generally have a low acidic flavour. They have a sugary sweet taste but can also be mildly sour. Sweet Oranges have a fresh fragrant scent that is sweet and juicy.</div>
+    <div id="sweetorange-NutritionalInfo" class="tabcontent">er 1 Naval Orange (140g): <br> Calories 73 <br> Fat 0.2g <br> Sodium 13mg <br> Carbohydrates 16.5g <br> Fibre 2.8g <br> Protein 1.3g <br> High amount of Vitamin C. Also supplies Folic acidic, Potassium and Dietary Fibre.</div>
+    <div id="sweetorange-HealthBenefits" class="tabcontent">Sweet Oranges typically have more than the recommended daily dose of Vitamin C found in the fruit which is incredibly helpful in boosting the immune system. They also contain bone-strengthening calcium. The Fibre and Phytonutrients promotes lowers the risk of cardiovascular disease and promotes overall heart health. The large amount of potassium found in the fruit can help prevent high blood pressure and stroke. The Citrate in sweet oranges help prevent kidney stones by binding to Calcium.</div>
+  </div>
+
+    <!-- buddha's hand -->
+  <div class="fruit-content" id="buddhashand-content">
+    <div id="buddhashand-Appearence" class="tabcontent">Buddha’s Hand are recognizable thanks to their elongated appendages often referred to as fingers, They can generally have anywhere to 5 to 20+ fingers. The fingers are fleshy segments that may open up as it ripens. Depending on if they open up, they can be positioned close together or more splayed. Buddha’s Hands have a bumpy texture on the surface thick and fleshy skin. The skin is bright yellow although a green colour is not unusual to see as well. The pith is white.</div>
+    <div id="buddhashand-Taste" class="tabcontent">Buddha’s Hands have a bight, mildly sweet and floral citrus taste. They lack a pulp but the spongey pith can be described as mildly sweet while the rind has a bitter tinge to it. The Fruit has a sweet and intense perfume lemon scent with a hint of lavender.</div>
+    <div id="buddhashand-NutritionalInfo" class="tabcontent">Per 96g: <br> Calories 48 <br> Fat 0g <br> Sodium 0mg <br> Carbohydrates 16g <br> Fibre 16g <br> Protein 0g <br> Excellent Source of Vitamin C. Also contains some Fibre.</div>
+    <div id="buddhashand-HealthBenefits" class="tabcontent">Aromatic compounds found in Buddha’s Hand like Coumarin, Limonite, Diosmin and Bergapten can help relieve pain and are also anti-inflammatory  which helps reduce swelling and pain. The Anti-inflammatory properties also help aid in digestion. The mild alcoholic compounds acts as an expectorant to treat respiratory diseases as well help clear coughs and phlegm from the pharynx.  The Vitamin C helps fight infection and boosts the immune system.</div>
+  </div>
+</div>
+
+  <!-- tangelo -->
+  <div class="fruit-content" id="tangelo-content">
+    <div id="tangelo-Appearence" class="tabcontent">Tangelos have a bell-ish shape and are typically 7-10 cm in diameter. They have thick skin. Both the flesh and ring is bright orange in colour. Tangelos can contain seeds.</div>
+    <div id="tangelo-Taste" class="tabcontent">Tangelos are juicy. They have a bold tangy flavour that is sweet and slightly tart. The fruit has a zesty citrusy aroma.</div>
+    <div id="tangelo-NutritionalInfo" class="tabcontent">Per 1 Medium Tangelo (131g): <br> Calories 60 <br> Fat 0g <br> Sodium 0mg <br> Carbohydrates 15g <br> Fibre 3g <br> Protein 1g <br> Excellent Source of Vitamin A. Relatively high in Folic Acid, Potassium and Vitamin C.</div>
+    <div id="tangelo-HealthBenefits" class="tabcontent">The Vitamin C found in Tangelos plays an important role in would healing and developing collagen. Flavonoids have antioxidant and anti-inflammatory properties such as Naringenin which helps lower risk of cardiovascular disease and cancer. The Fibre content aids in digestion and gut health.</div>
+  </div>
+
+  <!-- bitter orange -->
+  <div class="fruit-content" id="bitterorange-content">
+    <div id="bitterorange-Appearence" class="tabcontent">Bitter Oranges are smaller inside, typically measuring in at 7.5 cm in diameter. They have rough and bumpy skin with a thick Rind. Bitter Oranges have a yellow-orange colour to their skin, while the pulp may range from yellow to orange. The fruit tends to have a large number of oblong white seeds.</div>
+    <div id="bitterorange-Taste" class="tabcontent">Like the name suggests, Bitter Oranges have a bitter tasting peel and the inside is flesh can be intensely sour. Bitter Oranges have a sharp citrusy scent with similar aromatic notes as Sweet Oranges.</div>
+    <div id="bitterorange-NutritionalInfo" class="tabcontent">Per 100g: <br> Calories 47 <br> Carbohydrates 12g <br> Fibre 2g <br> Protein 1g <br> High in Vitamin C.</div>
+    <div id="bitterorange-HealthBenefits" class="tabcontent">The Fibre and Flavonoids found in Bitter Oranges improve digestive health. The Vitamin C content acts as an Antioxidant which helps boost the immune system. The Bioactive Compounds found Bitter Oranges may also have Anti-Inflammatory properties with in the respiratory system.</div>
+  </div>
+
+    <!-- lemon -->
+  <div class="fruit-content" id="lemon-content">
+    <div id="lemon-Appearence" class="tabcontent">Lemons are typically about 5 cm in diameter. They are oval in shape with a thick peel and textured rind. The skin is a bright yellow while the pulp is a paler yellow and the pith is white. Lemons often contain seeds.</div>
+    <div id="lemon-Taste" class="tabcontent">Lemons are highly acidic and are sour in taste. The Pith can be bitter. They have a bright and refreshing aromatic scent.</div>
+    <div id="lemon-NutritionalInfo" class="tabcontent">Per 1 Lemon (58g): <br> Calories 17 <br> Fat 0.2g <br> Sodium 1mg <br> Carbohydrates 5.4g <br> Fibre 1.6g <br> Protein 0.6g <br> Rich in Vitamin C.</div>
+    <div id="lemon-HealthBenefits" class="tabcontent">The Vitamin C and fibre content in the Pith of lemon play a role in improving  heart health. The Vitamin C found in Lemons also boosts the Immune System. Citric Acid helps prevent Kidney Stones, while the Soluble Fibre improves digestive health and promotes a healthy gut.</div>
+  </div>
+
+    <!-- keylime -->
+  <div class="fruit-content" id="keylime-content">
+    <div id="keymlime-Appearence" class="tabcontent">Key Limes are spherical in shape and measures between 2.5-5 cm across. They are typically green when picked and can turn more yellow as they ripen. The skin tends to be quite thin. Key Limes tend to contain lots of seeds too. </div>
+    <div id="keylime-Taste" class="tabcontent">Key Limes have a sweet and tart taste to them. They are also highly acidic. The fruit also emits a strong citrusy aroma.</div>
+    <div id="keylime-NutritionalInfo" class="tabcontent">Per 100g: <br> Calories 30 <br> Fat 0.2g <br> Sodium 2mg <br> Carbohydrates 10.5g <br> Fibre 2.8g <br> Protein 0.7g</div>
+    <div id="keylime-HealthBenefits" class="tabcontent">Key Limes contain Vitamin C which has Antioxidants which can help reduce inflammation and boost the immune system. The Fibre content aids in digestion. The Flavonoids found in the fruit can help reduce blood pressure.</div>
+  </div>
+
+    <!-- limequat -->
+  <div class="fruit-content" id="limequat-content">
+    <div id="limequat-Appearence" class="tabcontent">Limequats tend to be 3-4 cm in length. They can have a round to an elongated oval or sometimes curved shape The thin skin is smooth and faintly glossy. The sunken oil glands create a pebbled texture. Limequats can be yellow-green, yellow, to a yellow-orange colour. The fruit also contains many seeds.</div>
+    <div id="limequat-Taste" class="tabcontent">Limequats have sour flesh that can be reminiscent of a lime. The taste of the skin is described as sweet and floral followed by a sharp acidity. They have a lime like scent with more floral notes.</div>
+    <div id="limequat-NutritionalInfo" class="tabcontent">Per 1 Limequat (67g): <br> Calories 20 <br> Fat 0g <br> Sodium 0mg <br> Carbohydrates 7g <br> Fibre 2g <br> Protein 0g</div>
+    <div id="limequat-HealthBenefits" class="tabcontent">The Vitamin C found in Limequats boosts the immune system. The Fibre content promotes dietary health and healthy digestion. Limequats also contain Flavonoids, Limonoids, and Carotenoids that help protect against oxidative stress and support eye health.</div>
+  </div>
+
+    <!-- lime -->
+  <div class="fruit-content" id="lime-content">
+    <div id="lime-Appearence" class="tabcontent">Limes are typically 3-6cm in diameter making them smaller than some other citrus fruit. Thy are typically round and somewhat elongated. Limes are often green but certain varities can ripen to be more yellow in colour. They might also contain seeds.</div>
+    <div id="lime-Taste" class="tabcontent">Limes are sweeter and less acidic than lemons. Limes have a sharp zesty scent. The aroma is often described as bright and invigorating. </div>
+    <div id="lime-NutritionalInfo" class="tabcontent">Per 1 Whole Lime (67g): <br> Calories 20 <br> Sodium 1mg <br> Carbohydrates 7g <br> Fibre 1g <br> Protein 0.5g <br> Low in Calories and Contains Vitamin C.</div>
+    <div id="lime-HealthBenefits" class="tabcontent">Limes are a good source of Antioxidants. The Vitamin C helps boost the immune system and can decreases the risk of heart disease as well.</div>
+  </div>
+
+</div>
 </body>
 
 
 </html>
+
+
