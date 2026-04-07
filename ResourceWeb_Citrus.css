@@ -473,6 +473,7 @@ a {
     max-width: 500px;
     height: 100%; 
     object-fit: contain;
+    flex-grow: 2;
 }
 
 /* Tabs */
