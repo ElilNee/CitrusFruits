@@ -456,7 +456,6 @@ a {
     padding: 25px;
     margin: 0 auto;
     height: 90vh; 
-    min-height: 40vh;
     display: flex;
     flex-direction: column;
 }
