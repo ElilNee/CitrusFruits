@@ -456,6 +456,7 @@ a {
     padding: 25px;
     margin: 0 auto;
     height: 90vh; 
+    max-height: 70vh;
     display: flex;
     flex-direction: column;
 }
