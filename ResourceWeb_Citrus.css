@@ -498,7 +498,7 @@ a {
 /* Content */
 .tab-body {
     margin-top: 20px;
-    overflow-y: scroll;
+    overflow-y: auto;
     flex-grow: 1;
 }
 
